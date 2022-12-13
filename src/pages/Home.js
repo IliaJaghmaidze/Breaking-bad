@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="App">
       <h1>{character}</h1>
-      <Button onClick={() => dispatch(increment())}>HE</Button>
+      <Button onClick={() => dispatch(increment())}>sHE</Button>
     </div>
   );
 }

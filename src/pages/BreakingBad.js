@@ -9,7 +9,7 @@ function BreakingBad() {
   const [newCards, setNewCards] = useState([]);
   useEffect(() => {
     setNewCards(Dataset);
-  });
+  }, []);
 
   return (
     <Container>

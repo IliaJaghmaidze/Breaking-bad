@@ -1,15 +1,17 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
+import Heart from "./Heart/Heart";
 
 function Character({ name, occupation, img, status, nickname, category }) {
   return (
     <Col xxl={3} lg={4} gap={3} sm={6} xs={6}>
       <Card
-        border={status == "Alive" ? "success" : "danger"}
+        border={status === "Alive" ? "success" : "danger"}
         style={{ maxWidth: "18rem" }}
       >
         <Card.Img variant="top" src={img} className="card-picture" />
+        <Heart />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>
@@ -21,7 +23,7 @@ function Character({ name, occupation, img, status, nickname, category }) {
           <Card.Text>Show: {category}</Card.Text>
           <Card.Text>
             Status:{" "}
-            <span className={`tag ${status == "Alive" ? "green" : "red"}`}>
+            <span className={`tag ${status === "Alive" ? "green" : "red"}`}>
               {status}
             </span>
           </Card.Text>
