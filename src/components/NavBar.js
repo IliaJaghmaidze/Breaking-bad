@@ -17,7 +17,7 @@ function NavBar() {
               <Nav.Link>Breaking Bad</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/Favourites">
-              <Nav.Link>Better Call Saul</Nav.Link>
+              <Nav.Link>Favourites</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>

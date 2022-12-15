@@ -5,8 +5,11 @@ import { increment } from "../redux/characterSlice";
 
 function Home() {
   const character = useSelector((state) => state.character.value);
+  const status = useSelector((state) => state.character.status);
+  const list = useSelector((state) => state.character.list);
   const dispatch = useDispatch();
-
+  console.log(status);
+  console.log(list);
   return (
     <div className="App">
       <h1>{character}</h1>

@@ -4,10 +4,19 @@ export const characterSlice = createSlice({
   name: "character",
   initialState: {
     value: 0,
+    status: false,
+    list: [],
   },
   reducers: {
     increment: (state) => {
-      state.value += 1;
+      if (state.status === true) {
+        console.log("New");
+      }
+      return {
+        ...state,
+        status: !state.status,
+        list: [state],
+      };
     },
 
     incrementByAmount: (state, action) => {

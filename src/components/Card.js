@@ -11,7 +11,17 @@ function Character({ name, occupation, img, status, nickname, category }) {
         style={{ maxWidth: "18rem" }}
       >
         <Card.Img variant="top" src={img} className="card-picture" />
-        <Heart />
+        <span
+          style={{
+            position: "absolute",
+            top: 0,
+            right: 0,
+            marginLeft: "auto",
+            marginRight: "5px",
+          }}
+        >
+          <Heart />
+        </span>
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>
