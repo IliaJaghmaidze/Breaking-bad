@@ -9,14 +9,19 @@ export const characterSlice = createSlice({
   },
   reducers: {
     increment: (state) => {
-      if (state.status === true) {
-        console.log("New");
+      if (state.status === false) {
+        return {
+          ...state,
+          status: !state.status,
+          list: [state],
+        };
+      } else if (state.status === true) {
+        return {
+          ...state,
+          status: !state.status,
+          list: [!state],
+        };
       }
-      return {
-        ...state,
-        status: !state.status,
-        list: [state],
-      };
     },
 
     incrementByAmount: (state, action) => {

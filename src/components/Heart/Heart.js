@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Heart from "react-heart";
-import "../Heart/Heart.css";
+import "./Heart.css";
 
 function Hearticon() {
   const [active, setActive] = useState(false);
