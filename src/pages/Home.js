@@ -7,13 +7,17 @@ function Home() {
   const character = useSelector((state) => state.character.value);
   const status = useSelector((state) => state.character.status);
   const list = useSelector((state) => state.character.list);
+  const [items, setNew] = React.useState(["1", "2", "3"]);
   const dispatch = useDispatch();
   console.log(status);
   console.log(list);
   return (
     <div className="App">
       <h1>{character}</h1>
-      <Button onClick={() => dispatch(increment())}>sHE</Button>
+      {items.map((item) => (
+        <button onClick={() => dispatch(increment())}>{item}</button>
+      ))}
+      <Button>sHE</Button>
     </div>
   );
 }
