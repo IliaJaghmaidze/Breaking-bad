@@ -8,12 +8,12 @@ export const characterSlice = createSlice({
     list: [],
   },
   reducers: {
-    increment: (state) => {
+    increment: (state, action) => {
       if (state.status === false) {
         return {
           ...state,
           status: !state.status,
-          list: [state],
+          list: [state, action],
         };
       } else if (state.status === true) {
         return {

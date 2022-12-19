@@ -7,15 +7,24 @@ function Home() {
   const character = useSelector((state) => state.character.value);
   const status = useSelector((state) => state.character.status);
   const list = useSelector((state) => state.character.list);
-  const [items, setNew] = React.useState(["1", "2", "3"]);
+  const [items, setNew] = React.useState(["A", "B", "C"]);
   const dispatch = useDispatch();
   console.log(status);
   console.log(list);
+  const handleClick = (event, key) => {
+    console.log(event.target);
+    console.log("key index: ", key);
+  };
   return (
     <div className="App">
       <h1>{character}</h1>
-      {items.map((item) => (
-        <button onClick={() => dispatch(increment())}>{item}</button>
+      {items.map((item, key) => (
+        <button key={key} onClick={() => dispatch(increment(item))}>
+          {item}
+        </button>
+        // <button onClick={(event) => handleClick(event, key)} key={key}>
+        //   {item}
+        // </button>
       ))}
       <Button>sHE</Button>
     </div>
