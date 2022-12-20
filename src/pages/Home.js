@@ -18,8 +18,8 @@ function Home() {
   return (
     <div className="App">
       <h1>{character}</h1>
-      {items.map((item, key) => (
-        <button key={key} onClick={() => dispatch(increment(item))}>
+      {items.map((item) => (
+        <button key={item.toString()} onClick={() => dispatch(increment(item))}>
           {item}
         </button>
         // <button onClick={(event) => handleClick(event, key)} key={key}>
