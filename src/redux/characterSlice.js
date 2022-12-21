@@ -10,18 +10,15 @@ export const characterSlice = createSlice({
   },
   reducers: {
     increment: (state, action) => {
-      if (state.condition === false) {
+      if (state.list.includes(action.payload)) {
         return {
           ...state,
-          action: true,
-
-          list: [...state.list, action.payload],
-        };
-      } else if (state.condition === true) {
-        return {
-          ...state,
-          condition: false,
           list: state.list.filter((item) => item !== action.payload),
+        };
+      } else {
+        return {
+          ...state,
+          list: [...state.list, action.payload],
         };
       }
     },

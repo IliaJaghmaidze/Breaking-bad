@@ -13,11 +13,8 @@ function Character({
   category,
   char_id,
 }) {
-  const character = useSelector((state) => state.character.value);
-  const condition = useSelector((state) => state.character.condition);
   const list = useSelector((state) => state.character.list);
   const dispatch = useDispatch();
-  console.log(condition);
   console.log(list);
   const [active, setActive] = useState(false);
   const help = (item) => {
