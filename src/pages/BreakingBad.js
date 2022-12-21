@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import Row from "react-bootstrap/Row";
 import Stack from "react-bootstrap/Stack";
 import Dataset from "../data/csvjson.json";
+import { nanoid } from "@reduxjs/toolkit";
 
 function BreakingBad() {
   const [newCards, setNewCards] = useState([]);
@@ -21,8 +22,8 @@ function BreakingBad() {
         xl={3}
         xxl={4}
       >
-        {newCards.map((card) => (
-          <Card key={card.id} {...card} />
+        {newCards.map((card, char_id) => (
+          <Card key={char_id} {...card} />
         ))}
       </Row>
     </Container>

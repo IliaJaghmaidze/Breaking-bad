@@ -5,21 +5,22 @@ export const characterSlice = createSlice({
   name: "character",
   initialState: {
     value: 0,
-    status: false,
+    condition: false,
     list: [],
   },
   reducers: {
     increment: (state, action) => {
-      if (state.status === false) {
+      if (state.condition === false) {
         return {
           ...state,
-          status: true,
+          action: true,
+
           list: [...state.list, action.payload],
         };
-      } else if (state.status === true) {
+      } else if (state.condition === true) {
         return {
           ...state,
-          status: false,
+          condition: false,
           list: state.list.filter((item) => item !== action.payload),
         };
       }
