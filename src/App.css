@@ -7,9 +7,18 @@ body {
   overflow-x: hidden;
   padding-top: 70px;
 }
+.image-container {
+  width: 100%;
+}
+.wallpaper-img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
 .me-auto {
   margin-left: auto;
 }
+
 .card-picture {
   /* height: 22.4rem; */
   height: 22rem;
