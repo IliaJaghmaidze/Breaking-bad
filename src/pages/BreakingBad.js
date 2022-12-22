@@ -23,7 +23,7 @@ function BreakingBad() {
         xxl={4}
       >
         {newCards.map((card, char_id) => (
-          <Card key={char_id} {...card} />
+          <Card key={char_id} {...card} individual={card} />
         ))}
       </Row>
     </Container>

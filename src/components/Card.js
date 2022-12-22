@@ -11,7 +11,7 @@ function Character({
   status,
   nickname,
   category,
-  char_id,
+  individual,
 }) {
   const list = useSelector((state) => state.character.list);
   const dispatch = useDispatch();
@@ -41,7 +41,7 @@ function Character({
           <div style={{ width: "2rem" }}>
             <Heart
               isActive={active}
-              onClick={() => help(char_id)}
+              onClick={() => help(individual)}
               animationScale={1.2}
               animationTrigger="both"
               animationDuration={0.2}

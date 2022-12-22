@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Container } from "react-bootstrap";
 import Card from "../components/Card";
@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 
 function Favourites() {
   const list = useSelector((state) => state.character.list);
+
   return (
     <Container>
       <Row
