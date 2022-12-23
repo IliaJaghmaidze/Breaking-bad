@@ -35,3 +35,11 @@ body {
 .tag.green {
   color: green;
 }
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #ffffff;
+}
