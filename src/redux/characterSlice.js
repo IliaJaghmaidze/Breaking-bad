@@ -14,17 +14,23 @@ export const characterSlice = createSlice({
         return {
           ...state,
           list: state.list.filter((item) => item !== action.payload),
+          condition: false,
         };
       } else {
         return {
           ...state,
           list: [...state.list, action.payload],
+          condition: true,
         };
       }
     },
 
     incrementByAmount: (state, action) => {
-      state.value += action.payload;
+      // state.value += action.payload;
+      return {
+        ...state,
+        condition: !action.condition,
+      };
     },
   },
 });

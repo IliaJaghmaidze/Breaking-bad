@@ -14,9 +14,10 @@ function Character({
   individual,
 }) {
   const list = useSelector((state) => state.character.list);
+  const condition = useSelector((state) => state.character.condition);
   const dispatch = useDispatch();
   console.log(list);
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(condition);
   const help = (item) => {
     setActive(!active);
     console.log("clicked");
