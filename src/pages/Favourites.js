@@ -6,6 +6,9 @@ import Row from "react-bootstrap/Row";
 
 function Favourites() {
   const list = useSelector((state) => state.character.list);
+  const results = list.filter((element) => {
+    return element !== undefined;
+  });
 
   return (
     <Container>
@@ -17,7 +20,7 @@ function Favourites() {
         xl={3}
         xxl={4}
       >
-        {list.map((card, char_id) => (
+        {results.map((card, char_id) => (
           <Card key={char_id} {...card} />
         ))}
       </Row>
