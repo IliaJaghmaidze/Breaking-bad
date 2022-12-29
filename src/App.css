@@ -20,6 +20,7 @@ body {
   opacity: 0.7;
   background-color: Black;
   z-index: 10;
+  /* min-height: 100vh !important; */
 }
 .me-auto {
   margin-left: auto;
