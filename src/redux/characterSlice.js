@@ -8,17 +8,29 @@ export const characterSlice = createSlice({
   },
   reducers: {
     increment: (state, action) => {
+      let index = state.list.findIndex(
+        (el) => el.char_id === action.payload.char_id
+      );
+
+      if (index == -1)
+        return {
+          list: [...state.list, action.payload],
+        };
+      return {
+        list: state.list.filter((item) => item !== action.payload),
+      };
       if (state.list.includes(action.payload)) {
         return {
           ...state,
           list: state.list.filter((item) => item !== action.payload),
-          condition: false,
+          condition: true,
         };
       } else {
         return {
           ...state,
           list: [...state.list, action.payload],
-          condition: true,
+
+          condition: false,
         };
       }
     },
