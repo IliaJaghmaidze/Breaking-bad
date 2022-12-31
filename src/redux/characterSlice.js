@@ -11,40 +11,12 @@ export const characterSlice = createSlice({
       let index = state.list.findIndex(
         (el) => el.char_id === action.payload.char_id
       );
-
-      if (index == -1)
+      if (index === -1)
         return {
           list: [...state.list, action.payload],
         };
       return {
-        list: state.list.filter((item) => item !== action.payload),
-      };
-      if (state.list.includes(action.payload)) {
-        return {
-          ...state,
-          list: state.list.filter((item) => item !== action.payload),
-          condition: true,
-        };
-      } else {
-        return {
-          ...state,
-          list: [...state.list, action.payload],
-
-          condition: false,
-        };
-      }
-    },
-    // todos: state.todos.map(todo => todo.id === action.id ?
-    //   // transform the one with a matching id
-    //   { ...todo, completed: action.completed } :
-    //   // otherwise return original todo
-    //   todo
-
-    incrementByAmount: (state, action) => {
-      // state.value += action.payload;
-      return {
-        ...state,
-        condition: !action.condition,
+        list: [...state.list.slice(0, index), ...state.list.slice(index + 1)],
       };
     },
   },
