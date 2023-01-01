@@ -5,12 +5,13 @@ import Row from "react-bootstrap/Row";
 import Stack from "react-bootstrap/Stack";
 import Dataset from "../data/csvjson.json";
 import { nanoid } from "@reduxjs/toolkit";
-
+import { useDispatch, useSelector } from "react-redux";
 function BreakingBad() {
   const [newCards, setNewCards] = useState([]);
   useEffect(() => {
     setNewCards(Dataset);
   }, []);
+  const list = useSelector((state) => state.character.list);
 
   return (
     <Container>
@@ -23,7 +24,12 @@ function BreakingBad() {
         xxl={4}
       >
         {newCards.map((card, char_id) => (
-          <Card key={char_id} {...card} individual={card} />
+          <Card
+            key={char_id}
+            {...card}
+            individual={card}
+            conditional={list.includes(card) === -1 ? true : false}
+          />
         ))}
       </Row>
     </Container>

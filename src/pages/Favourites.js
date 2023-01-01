@@ -21,7 +21,7 @@ function Favourites() {
         xxl={4}
       >
         {results.map((card, char_id) => (
-          <Card key={char_id} {...card} />
+          <Card key={char_id} {...card} individual={card} conditional={true} />
         ))}
       </Row>
     </Container>
