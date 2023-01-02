@@ -28,7 +28,7 @@ function BreakingBad() {
             key={char_id}
             {...card}
             individual={card}
-            conditional={list.includes(card) === -1 ? true : false}
+            conditional={list.includes(card) ? true : false}
           />
         ))}
       </Row>
