@@ -11,7 +11,7 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <LinkContainer to="/">
-              <Navbar.Brand>Home</Navbar.Brand>
+              <Nav.Link>Home</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/breakingbad">
               <Nav.Link>Breaking Bad</Nav.Link>

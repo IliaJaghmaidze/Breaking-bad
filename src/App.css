@@ -1,14 +1,14 @@
 .App {
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  padding-top: 70px;
+  padding-top: 80px;
   overflow-x: hidden;
 }
-
 .image-container {
   width: 100%;
   position: relative;
@@ -24,6 +24,7 @@ body {
 }
 .me-auto {
   margin-left: auto;
+  font-size: 18px;
 }
 
 .card-picture {
@@ -49,4 +50,17 @@ body {
   transform: translate(-50%, -50%);
   font-size: 36px;
   color: #ffffff;
+}
+.header {
+  font-size: 19px;
+}
+@media (max-width: 1200px) {
+  .card-picture {
+    height: 20rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
 }

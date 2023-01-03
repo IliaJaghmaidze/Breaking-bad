@@ -47,8 +47,12 @@ function Character({
             />
           </div>
         </span>
+        <Card.Header className="header">
+          <b>{name}</b>
+        </Card.Header>
+
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
+          <Card.Title></Card.Title>
           <Card.Text>
             Known as: <b>{nickname}</b>
           </Card.Text>
