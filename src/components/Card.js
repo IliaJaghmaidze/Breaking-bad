@@ -20,7 +20,7 @@ function Character({
   console.log(list);
   const [active, setActive] = useState(conditional);
   const help = (item) => {
-    setActive(!active);
+    setActive(!conditional);
     console.log("clicked");
     dispatch(increment(item));
   };
@@ -42,7 +42,7 @@ function Character({
         >
           <div style={{ width: "2rem" }}>
             <Heart
-              isActive={active}
+              isActive={conditional}
               onClick={() => help(individual)}
               animationScale={1.2}
               animationTrigger="both"

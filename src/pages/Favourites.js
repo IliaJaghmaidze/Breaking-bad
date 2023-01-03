@@ -6,9 +6,6 @@ import Row from "react-bootstrap/Row";
 
 function Favourites() {
   const list = useSelector((state) => state.character.list);
-  const results = list.filter((element) => {
-    return element !== undefined;
-  });
 
   return (
     <Container>
@@ -20,8 +17,13 @@ function Favourites() {
         xl={3}
         xxl={4}
       >
-        {results.map((card, char_id) => (
-          <Card key={char_id} {...card} individual={card} conditional={true} />
+        {list.map((card, char_id) => (
+          <Card
+            key={char_id}
+            {...card}
+            individual={card}
+            conditional={list.includes(card) ? true : false}
+          />
         ))}
       </Row>
     </Container>
