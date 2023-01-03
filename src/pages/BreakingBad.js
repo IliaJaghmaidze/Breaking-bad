@@ -2,10 +2,8 @@ import { React, useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Card from "../components/Card";
 import Row from "react-bootstrap/Row";
-import Stack from "react-bootstrap/Stack";
 import Dataset from "../data/csvjson.json";
-import { nanoid } from "@reduxjs/toolkit";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 function BreakingBad() {
   const [newCards, setNewCards] = useState([]);
   useEffect(() => {

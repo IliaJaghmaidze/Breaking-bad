@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Heart from "react-heart";
-import { useDispatch, useSelector } from "react-redux";
-import { increment } from "../redux/characterSlice";
+import { useDispatch } from "react-redux";
+import { addFavourite } from "../redux/characterSlice";
 function Character({
   name,
   occupation,
@@ -14,15 +14,11 @@ function Character({
   individual,
   conditional,
 }) {
-  const list = useSelector((state) => state.character.list);
-  const condition = useSelector((state) => state.character.condition);
   const dispatch = useDispatch();
-  console.log(list);
   const [active, setActive] = useState(conditional);
-  const help = (item) => {
+  const handleClick = (item) => {
     setActive(!conditional);
-    console.log("clicked");
-    dispatch(increment(item));
+    dispatch(addFavourite(item));
   };
   return (
     <Col xxl={3} lg={4} gap={3} sm={6} xs={6}>
@@ -43,7 +39,7 @@ function Character({
           <div style={{ width: "2rem" }}>
             <Heart
               isActive={conditional}
-              onClick={() => help(individual)}
+              onClick={() => handleClick(individual)}
               animationScale={1.2}
               animationTrigger="both"
               animationDuration={0.2}

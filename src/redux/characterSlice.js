@@ -2,12 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 export const characterSlice = createSlice({
   name: "character",
   initialState: {
-    value: 0,
-    condition: false,
     list: [],
   },
   reducers: {
-    increment: (state, action) => {
+    addFavourite: (state, action) => {
       let index = state.list.findIndex(
         (el) => el.char_id === action.payload.char_id
       );
@@ -22,6 +20,6 @@ export const characterSlice = createSlice({
   },
 });
 
-export const { increment, incrementByAmount } = characterSlice.actions;
+export const { addFavourite } = characterSlice.actions;
 
 export default characterSlice.reducer;
