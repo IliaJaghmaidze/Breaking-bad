@@ -19,6 +19,9 @@ function Home() {
           <img src={Walter} className="walter-card" />
           <img src={Jesse} className="jesse-card" />
         </div>
+        <div className="description">
+          <h2>Select your cards</h2>
+        </div>
       </div>
       <div className="favourites"></div>
     </Container>
