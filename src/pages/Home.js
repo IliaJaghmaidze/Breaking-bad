@@ -6,7 +6,7 @@ import Walter from "../assets/walter.PNG";
 import { Container, Row, Col } from "react-bootstrap";
 function Home() {
   return (
-    <Container>
+    <Container fluid="xl">
       <div className="welcome">
         <img src={Wallpaper} className="wallpaper-img" alt="wallpaper" />
         <div class="center">
