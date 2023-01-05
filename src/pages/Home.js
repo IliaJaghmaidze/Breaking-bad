@@ -3,7 +3,7 @@ import Wallpaper from "../assets/wallpaper.png";
 import background from "../assets/background.jpg";
 import Jesse from "../assets/jesse.PNG";
 import Walter from "../assets/walter.PNG";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 function Home() {
   return (
     <Container>
@@ -14,11 +14,12 @@ function Home() {
         </div>
       </div>
       <div className="about">
-        <img src={background} className="background-img" alt="wallpaper" />
-        <div className="cards-container">
+        <div className="featured-cards">
           <img src={Walter} className="walter-card" />
+
           <img src={Jesse} className="jesse-card" />
         </div>
+
         <div className="description">
           <h2>Select your cards</h2>
         </div>
