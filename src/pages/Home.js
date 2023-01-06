@@ -3,7 +3,7 @@ import Wallpaper from "../assets/wallpaper.png";
 import background from "../assets/background.jpg";
 import Jesse from "../assets/jesse.PNG";
 import Walter from "../assets/walter.PNG";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 function Home() {
   return (
     <Container fluid="xl">

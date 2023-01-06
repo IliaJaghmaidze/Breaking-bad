@@ -14,8 +14,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.25rem;
-  color: #fdfeff;
-  background-color: #333333;
+  color: #1e2329;
+  background-color: rgb(219, 214, 214);
+  /* background-color: #333333; */
   opacity: 0.8;
   border-radius: 10px;
 }
@@ -48,13 +49,19 @@
   border: 2px solid rgb(221, 215, 215);
 }
 .description {
-  color: #fdfeff;
+  color: #1e2329;
   flex: 0.5;
+  text-align: left;
 }
 .description h2 {
-  background-color: #7f7f80;
   margin-top: 140px;
-  max-width: 80%;
+  max-width: 90%;
+  font-size: 36px;
+  letter-spacing: 1px;
+  align-self: flex-start;
+  box-shadow: 0 0 20px 2px #d0d0d0;
+  padding: 15px;
+  border-radius: 20px;
 }
 .favourites {
   width: 100%;
