@@ -48,10 +48,13 @@
   border: 2px solid rgb(221, 215, 215);
 }
 .description {
-  background-color: #333333;
   color: #fdfeff;
-  display: inline;
   flex: 0.5;
+}
+.description h2 {
+  background-color: #7f7f80;
+  margin-top: 140px;
+  max-width: 80%;
 }
 .favourites {
   width: 100%;

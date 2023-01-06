@@ -21,7 +21,9 @@ function Home() {
         </div>
 
         <div className="description">
-          <h2>Select your cards</h2>
+          <h2>
+            This website allows you to view character information in card format
+          </h2>
         </div>
       </div>
       <div className="favourites"></div>
