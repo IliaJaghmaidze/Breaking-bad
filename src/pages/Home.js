@@ -3,7 +3,8 @@ import Wallpaper from "../assets/wallpaper.png";
 import background from "../assets/background.jpg";
 import Jesse from "../assets/jesse.PNG";
 import Walter from "../assets/walter.PNG";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import BreakingBad from "./BreakingBad";
 function Home() {
   return (
     <Container fluid="xl">
@@ -24,6 +25,9 @@ function Home() {
           <h2>
             This website allows you to view character information in card format
           </h2>
+          <Button variant="dark" href="/breakingbad" className="browse-button">
+            Browse Cards
+          </Button>
         </div>
       </div>
       <div className="favourites"></div>
