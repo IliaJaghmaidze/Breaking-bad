@@ -3,6 +3,7 @@ import Wallpaper from "../assets/wallpaper.png";
 import background from "../assets/background.jpg";
 import Jesse from "../assets/jesse.PNG";
 import Walter from "../assets/walter.PNG";
+import Hank from "../assets/hank.PNG";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import BreakingBad from "./BreakingBad";
 function Home() {
@@ -16,9 +17,9 @@ function Home() {
       </div>
       <div className="about">
         <div className="featured-cards">
-          <img src={Walter} className="walter-card" />
+          <img src={Walter} className="featured walter" />
 
-          <img src={Jesse} className="jesse-card" />
+          <img src={Jesse} className="featured jesse" />
         </div>
 
         <div className="description">
@@ -30,7 +31,15 @@ function Home() {
           </Button>
         </div>
       </div>
-      <div className="favourites"></div>
+      <div className="favourites">
+        <div className="featured-description">
+          Browse through cards and add your favourite characters in your
+          favourites list
+        </div>
+        <div className="featured-favourite">
+          <img src={Hank} className="featured hank" />
+        </div>
+      </div>
     </Container>
   );
 }
