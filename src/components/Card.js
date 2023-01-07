@@ -36,7 +36,7 @@ function Character({
             marginRight: "5px",
           }}
         >
-          <div style={{ width: "2rem" }}>
+          <div title="Add to favourites" style={{ width: "2rem" }}>
             <Heart
               isActive={conditional}
               onClick={() => handleClick(individual)}
