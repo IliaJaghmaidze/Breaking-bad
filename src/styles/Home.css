@@ -33,7 +33,7 @@
   flex: 0.5;
   display: flex;
   gap: 55px;
-  margin-left: 15px;
+  margin-left: 45px;
 }
 .featured {
   box-shadow: 35px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -67,8 +67,9 @@
 }
 .favourites {
   width: 100%;
-  padding: 6.8rem 0 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
   display: flex;
+  margin-left: 15px;
 }
 .featured-favourite {
   flex: 0.5;
@@ -82,7 +83,11 @@
   letter-spacing: 1px;
   text-align: left;
 }
-
+.featured-hank {
+  max-width: 80%;
+  max-height: 500px;
+  margin-right: 65px;
+}
 @media (max-width: 1200px) {
   .card-picture {
     height: 20rem;

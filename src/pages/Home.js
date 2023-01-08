@@ -17,9 +17,9 @@ function Home() {
       </div>
       <div className="about">
         <div className="featured-cards">
-          <img src={Walter} className="featured walter" />
+          <img src={Walter} className="featured walter" alt="walt" />
 
-          <img src={Jesse} className="featured jesse" />
+          <img src={Jesse} className="featured jesse" alt="jesse" />
         </div>
 
         <div className="description">
@@ -37,7 +37,7 @@ function Home() {
           favourites list
         </div>
         <div className="featured-favourite">
-          <img src={Hank} className="featured hank" />
+          <img src={Hank} className="featured-hank" alt="favourite" />
         </div>
       </div>
     </Container>
