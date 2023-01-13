@@ -23,9 +23,7 @@ function Home() {
         </div>
 
         <div className="description">
-          <h2>
-            This website allows you to view character information in card format
-          </h2>
+          <h2>View character information in card format</h2>
           <Button variant="dark" href="/breakingbad" className="browse-button">
             Browse Cards
           </Button>
@@ -33,8 +31,8 @@ function Home() {
       </div>
       <div className="favourites">
         <div className="featured-description">
-          Browse through cards and add your favourite characters in your
-          favourites list
+          Mark your favourite characters as favourite and view them in
+          Favourites page
         </div>
         <div className="featured-favourite">
           <img src={Hank} className="featured-hank" alt="favourite" />
