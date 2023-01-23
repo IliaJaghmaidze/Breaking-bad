@@ -1,11 +1,9 @@
 import React from "react";
 import Wallpaper from "../assets/wallpaper.png";
-import background from "../assets/background.jpg";
 import Jesse from "../assets/jesse.PNG";
 import Walter from "../assets/walter.PNG";
 import Hank from "../assets/hank.PNG";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import BreakingBad from "./BreakingBad";
+import { Container, Button } from "react-bootstrap";
 function Home() {
   return (
     <Container fluid="xl">
