@@ -17,23 +17,23 @@ function Home() {
           Welcome to Breaking Bad & Better Call Saul Character Wiki
         </div>
       </div>
-      <div className="flex-col py-28 w-5/5 sm:flex-row flex sm:ml-5 md:gap-36 lg:gap-0 md:ml-4 lg:ml-0 bg-white">
-        <div className=" justify-center flex-[0.5] flex gap-8 sm:gap-14 lg:ml-12 sm:justify-start">
+      <div className="flex-col py-28 w-5/5 md:flex-row flex sm:ml-5 md:gap-36 lg:gap-0 md:ml-4 lg:ml-0 bg-white">
+        <div className=" justify-center flex-[0.5] flex gap-8 sm:gap-14 lg:ml-12 md:justify-start">
           <img
             src={Walter}
-            className="sm:shadow-[35px_10px_5px_0px_rgba(0,0,0,0.75)] max-w-[40%] max-h-[26rem]   sm:max-w-[60%] sm:max-h-[27rem] border-solid border-2 border-black-500 "
+            className="sm:shadow-[35px_10px_5px_0px_rgba(0,0,0,0.75)] max-w-[40%] max-h-[26rem]   md:max-w-[60%] md:max-h-[27rem] border-solid border-2 border-black-500 "
             alt="walt"
           />
 
           <img
             src={Jesse}
             className="sm:shadow-[35px_10px_5px_0px_rgba(0,0,0,0.75)] 
-            max-w-[40%] max-h-[26rem] lg:mt-9 sm:max-w-[60%] sm:max-h-[27rem] border-solid border-2 border-black-500"
+            max-w-[40%] max-h-[26rem] lg:mt-9 md:max-w-[60%] md:max-h-[27rem] border-solid border-2 border-black-500"
             alt="jesse"
           />
         </div>
 
-        <div className=" flex flex-[0.5] p-4 flex-col item-center justify-center sm:ml-36 md:ml-0">
+        <div className=" flex flex-[0.5] p-4 flex-col item-center justify-center  md:ml-0">
           <h2 className=" text-2xl sm:text-4xl p-4  ">
             View character information in card format
           </h2>
