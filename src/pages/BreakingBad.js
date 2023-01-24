@@ -13,14 +13,7 @@ function BreakingBad() {
 
   return (
     <Container>
-      <Row
-        className="justify-content-md-center"
-        sm={2}
-        md={2}
-        lg={2}
-        xl={3}
-        xxl={4}
-      >
+      <Row className=" gap-y-7">
         {newCards.map((card, char_id) => (
           <Card
             key={char_id}

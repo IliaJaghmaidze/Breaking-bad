@@ -11,15 +11,7 @@ body {
 }
 .me-auto {
   margin-left: auto;
-  font-size: 18px;
-}
-
-.card-picture {
-  height: 22.4rem;
-  height: 22rem;
-}
-.justify-content-md-center {
-  row-gap: 1rem;
+  font-size: 1.4rem;
 }
 .tag {
   color: blue;

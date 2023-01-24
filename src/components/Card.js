@@ -21,12 +21,13 @@ function Character({
     dispatch(addFavourite(item));
   };
   return (
-    <Col xxl={3} lg={4} gap={3} sm={6} xs={6}>
+    <Col xxl={3} lg={4} gap={3} sm={6} xs={12}>
       <Card
         border={status === "Alive" ? "success" : "danger"}
         style={{ maxWidth: "18rem" }}
+        className=" m-[0_auto] "
       >
-        <Card.Img variant="top" src={img} className="card-picture" />
+        <Card.Img variant="top" src={img} className="h-[18rem] lg:h-[22rem]" />
         <span
           style={{
             position: "absolute",
@@ -47,7 +48,7 @@ function Character({
             />
           </div>
         </span>
-        <Card.Header className="header">
+        <Card.Header className=" text-lg lg:text-xl ">
           <b>{name}</b>
         </Card.Header>
 
