@@ -1,8 +1,8 @@
 import React from "react";
 import Wallpaper from "../assets/wallpaper.png";
-import Jesse from "../assets/jesse.PNG";
-import Walter from "../assets/walter.PNG";
-import Hank from "../assets/hank.PNG";
+import Jesse from "../assets/jesse.png";
+import Walter from "../assets/walter.png";
+import Hank from "../assets/hank.png";
 import { Container, Button } from "react-bootstrap";
 function Home() {
   return (
