@@ -14,14 +14,17 @@ function BreakingBad() {
   return (
     <Container>
       <Row className=" gap-y-7">
-        {newCards.map((card, char_id) => (
-          <Card
-            key={char_id}
-            {...card}
-            individual={card}
-            conditional={list.includes(card) ? true : false}
-          />
-        ))}
+        {newCards.map((card, index) => {
+          const currentCharId = card.char_id;
+          return (
+            <Card
+              key={index}
+              {...card}
+              individual={card}
+              conditional={list.some((item) => item.char_id === currentCharId)}
+            />
+          );
+        })}
       </Row>
     </Container>
   );
