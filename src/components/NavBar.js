@@ -16,7 +16,7 @@ function NavBar() {
             <LinkContainer to="/breakingbad">
               <Nav.Link>Breaking Bad</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/Favourites">
+            <LinkContainer to="/favourites">
               <Nav.Link>Favourites</Nav.Link>
             </LinkContainer>
           </Nav>
